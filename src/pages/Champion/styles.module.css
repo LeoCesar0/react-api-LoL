@@ -84,6 +84,7 @@
 }
 
 .tags{
+    display: inline-block;
     font-size: 1.2rem;
     padding: 4px 8px;
 
