@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
+
+/*
+.champion_page{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+*/
+
+.main{
+    height: 100%;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: var(--bg-white);
+    filter: brightness(0.9);
+}
+
+.image_container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.image{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+    object-fit: cover;
+    object-position: top;
+
+    border-right: 2px solid var(--dark-grey);
+
+    animation: slide 1500ms
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.information{
+    padding: 8rem;
+}
+
+.information p{
+    margin: 3.5rem ;
+}
+
+.name{
+    font-size: 10rem;
+    letter-spacing: 0.8rem;
+    font-weight: 400;
+    font-family: 'Grey Qo', cursive;
+}
+
+.title{
+    font-size: 3.8rem;
+    text-transform: capitalize;
+}
+
+.name, .title{
+    filter: contrast(1.5);
+    filter: brightness(1.5);
+}
+
+.lore{
+    color: var(--dark-grey);
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.tags{
+    font-size: 1.2rem;
+    padding: 4px 8px;
+
+    border-radius: 8px;
+    background-color: var(--tomato);
+    color: var(--bg-white);
+    font-weight: bold;
+}
+
