@@ -50,7 +50,7 @@ const Home: React.FC = () => {
 
   const getRotationData = async () => {
     const { data } = await apikey.get(
-      "champion-rotations?api_key=RGAPI-9375936a-59dc-47aa-affb-923ae835875d"
+      "champion-rotations?api_key="
     );
 
     setRotation(data.freeChampionIds);
